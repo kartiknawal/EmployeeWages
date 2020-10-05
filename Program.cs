@@ -1,13 +1,24 @@
 ﻿using System;
 
-namespace EmployeeWageProblem
+namespace EmployeeWages
 {
     class Program
     {
-        static void Main(String[] args)
+        static void Main(string[] args)
         {
-            ForMultipleCompanies.computeEmpWage("Google", 25, 3, 10);
-            ForMultipleCompanies.computeEmpWage("Facebook", 11, 4, 20);
+            //Constants
+            int IS_FULL_TIME = 1;
+            Random random = new Random();
+            //Computation
+            int empcheck = random.Next(0, 2);
+            if (empcheck == IS_FULL_TIME)
+            {
+                Console.WriteLine("Employee is Present");
+            }
+            else
+            {
+                Console.WriteLine("Employee is Present");
+            }
         }
     }
 }
